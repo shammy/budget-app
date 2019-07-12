@@ -1,0 +1,134 @@
+$dark: #292929;
+$light: #efefef;
+$red: #d91e18;
+$green: #2ecc71;
+$dark-green: #11ce5f;
+
+$blue: #4183d7;
+$font-stack: "Lato", sans-serif;
+$small: 40em;
+
+.income-expense-insertion {
+  margin: 2px;
+  /* background-color: #eee; */
+}
+.income-expense-insertion .submit {
+  background-color: #12c818;
+  color: white;
+  width: 100px;
+  height: 40px;
+  padding: 9px 20px;
+  font-weight: bold;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background: darken($dark-green, 10%);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2),
+      inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+  }
+}
+.income-expense-insertion .minus {
+  background-color: rgba(236, 15, 45, 1);
+  color: white;
+  padding: 9px 20px;
+  font-weight: bold;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.minus:hover {
+  background-color: rgba(236, 15, 45, 0.7);
+}
+.minus:active {
+  background-color: rgba(236, 15, 45, 0.7);
+  border: 5px solid rgba(236, 15, 45, 1);
+}
+.income-expense-insertion .add {
+  background-color: #0b5c0e;
+  color: white;
+  padding: 9px 20px;
+  font-weight: bold;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.income-expense-insertion .description,
+.amount {
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.income-expense-insertion .options {
+  cursor: pointer;
+  background-color: white;
+  margin-right: 1rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 50px;
+  text-align-last: center;
+}
+
+.button-label {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 0.5em;
+  cursor: pointer;
+  color: $dark;
+  border-radius: 0.25em;
+  background: $light;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+  user-select: none;
+  h1 {
+    font-size: 1em;
+    font-family: $font-stack;
+  }
+  &:hover {
+    background: darken($light, 10%);
+    color: darken($dark, 10%);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2),
+      inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2),
+      inset 0px -1px 0 rgba(0, 0, 0, 0.22);
+  }
+  @media (max-width: $small) {
+    padding: 0em 1em 3px;
+    margin: 0.25em;
+  }
+}
+
+#plus:checked + .button-label {
+  background: $green;
+  color: $light;
+  &:hover {
+    background: darken($green, 5%);
+    color: darken($light, 5%);
+  }
+}
+
+#minus:checked + .button-label {
+  background: $red;
+  color: $light;
+  &:hover {
+    background: darken($red, 5%);
+    color: darken($light, 5%);
+  }
+}
+
+.hidden {
+  display: none;
+}

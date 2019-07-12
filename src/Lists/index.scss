@@ -1,0 +1,47 @@
+.income-list,
+.expense-list {
+  text-align: left;
+  max-width: 200px;
+  list-style: none;
+  list-style-position: inside;
+  margin: 0 auto;
+  padding-left: 6rem;
+}
+.income-expense-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#income-header {
+  color: #4caf50;
+}
+#expense-header {
+  color: red;
+}
+.list-item {
+  max-width: 200px;
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+  padding-bottom: 4px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  font-size: 1.3em;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.list-item .list-amount {
+  font-style: italic;
+}
+
+.list-item-content {
+  display: inline-block;
+  padding-left: 10px;
+  font-family: sans-serif;
+}
+.list-item:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  font-weight: 600;
+}

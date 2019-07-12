@@ -1,0 +1,55 @@
+.app-header {
+  /* background-image: url("https://i.imgur.com/HlmWDMU.jpg"); */
+  /* height: 350px; */
+  /* color: white; */
+  font-weight: bold;
+}
+
+.circle {
+  border-radius: 50%;
+  color: rgb(247, 239, 239);
+  text-align: center;
+  line-height: 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.bb {
+  border: 1px solid #22798d;
+}
+
+.app-header .current-budget-header {
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.app-header .budget-number {
+  font-size: 30px;
+  display: inline-block;
+}
+
+.app-header .income,
+.expense {
+  font-size: 30px;
+  display: inline-block;
+}
+
+.app-header .income {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  margin-right: 150px;
+  background: linear-gradient(
+    to bottom,
+    #4ee728,
+    #0b8115
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.app-header .expense {
+  margin-top: 4px;
+  margin-left: 150px;
+  background: linear-gradient(
+    to bottom,
+    #e72848,
+    #810b1b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
