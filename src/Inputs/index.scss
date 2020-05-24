@@ -5,18 +5,17 @@ $green: #2ecc71;
 $dark-green: #11ce5f;
 
 $blue: #4183d7;
-$font-stack: "Lato", sans-serif;
+$font-stack: 'Lato', sans-serif;
 $small: 40em;
 
 .income-expense-insertion {
   margin: 2px;
-  /* background-color: #eee; */
+  background-color: #eee;
 }
 .income-expense-insertion .submit {
   background-color: #12c818;
   color: white;
   width: 100px;
-  height: 40px;
   padding: 9px 20px;
   font-weight: bold;
   margin: 8px 0;
@@ -25,8 +24,7 @@ $small: 40em;
   cursor: pointer;
   &:hover {
     background: darken($dark-green, 10%);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2),
-      inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
   }
 }
 .income-expense-insertion .minus {
@@ -97,13 +95,11 @@ $small: 40em;
   &:hover {
     background: darken($light, 10%);
     color: darken($dark, 10%);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2),
-      inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
   }
   &:active {
     transform: translateY(2px);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2),
-      inset 0px -1px 0 rgba(0, 0, 0, 0.22);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0px -1px 0 rgba(0, 0, 0, 0.22);
   }
   @media (max-width: $small) {
     padding: 0em 1em 3px;
